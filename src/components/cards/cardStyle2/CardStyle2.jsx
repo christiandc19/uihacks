@@ -4,23 +4,23 @@ import '../../cards/cardStyle2/cardStyle2.css'
 function CardStyle2(props) {
   return (
 <>
-    <div>
+    <div className='card-main2'>
         
-        <div>
-            <img className='image' src= {props.Image2} alt="Image" />
+        <div className='flex-left'>
+            <img className='image2' src= {props.Image2} alt="Image" />
         </div>
         
-        <div>
+        <div className='flex-right'>
                 <p className="card-name">{props.CardName2}</p>
                 <p className='card-description'>{props.Description2}</p>
-                <div className='btn-container'>
-                    <button className='card-button2'>View Details</button>
-                </div>  
+                <div className='btn-container2'>
+                <button className='card2-button'>View Details</button>
+                </div>
         </div>
 
     </div>
 </>
-  )
+  ) 
 }
 
 export default CardStyle2;

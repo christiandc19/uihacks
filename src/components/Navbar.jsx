@@ -5,6 +5,7 @@ import Home from './home/Home'
 import Blogs from './blogs/Blogs';
 import Cards from './cards/Cards';
 import Contact from './contact/Contact';
+import AdBanners from './adBanners/AdBanners';
 
 export default function NavContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -23,6 +24,11 @@ export default function NavContainer() {
     if (currentPage === 'Blogs') {
       return <Blogs />;
     }
+
+    if (currentPage === 'AdBanners') {
+      return <AdBanners />;
+    }
+
     return <Contact />;
   };
 

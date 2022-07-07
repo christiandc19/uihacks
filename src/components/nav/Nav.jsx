@@ -33,6 +33,11 @@ function Nav({ currentPage, handlePageChange }) {
           className={currentPage === 'Blogs' ? 'nav-link active' : 'nav-link'}>Blogs</a>
       </li>
 
+      <li>
+        <a href="#AdBanners" data-bs-target="#navbarNav" onClick={() => handlePageChange('AdBanners')}
+          className={currentPage === 'AdBanners' ? 'nav-link active' : 'nav-link'}>Ad Banners</a>
+      </li>
+
         <li>
        <a href="#Contact" data-bs-toggle="collapse" data-bs-target="#contact" onClick={() => handlePageChange('Contact')}
          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a>
